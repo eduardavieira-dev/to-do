@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eduarda Vieira" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>To-do list</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>To-do list</h1>
+            <p>Adicione, edite, exclua ou marque como concluída suas atividades e afazeres do dia</p>
+
+            <form onsubmit="adicionarTarefa(event)">
+                <input 
+                    type="text" 
+                    id="nova-tarefa" 
+                    placeholder="Digite sua tarefa..." 
+                    required 
+                />
+                <button id="adicionar-tarefa">Adicionar nova tarefa</button>
+                <div id="adicionar"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
